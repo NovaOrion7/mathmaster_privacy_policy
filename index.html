@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Math Master</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #0f172a;
+            --accent: #38bdf8;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            line-height: 1.7;
+            background: radial-gradient(circle at top left, #1e293b 0%, #0f172a 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .lang-btn {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            color: var(--text-main);
+            padding: 0.5rem 1.5rem;
+            border-radius: 99px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .lang-btn.active {
+            background: var(--accent);
+            color: #0f172a;
+            border-color: var(--accent);
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+        }
+
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 2rem;
+        }
+
+        section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        h2::before {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 24px;
+            background: var(--accent);
+            border-radius: 4px;
+        }
+
+        p {
+            color: var(--text-dim);
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            color: var(--text-dim);
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .contact-box {
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px dashed var(--accent);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact-box p {
+            color: var(--text-main);
+            margin-bottom: 0;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.2);
+            color: var(--accent);
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .card { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Math Master</h1>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="setLang('tr')">Türkçe</button>
+                <button class="lang-btn" onclick="setLang('en')">English</button>
+            </div>
+        </header>
+
+        <main class="card">
+            <!-- Turkish Version -->
+            <section id="tr" class="active">
+                <span class="badge">Son Güncelleme: 25 Şubat 2026</span>
+                <p><strong>Math Master</strong> ("biz", "bizim" veya "uygulama") olarak, gizliliğinize en yüksek derecede önem veriyoruz. Bu politika, bilgilerinizin nasıl ele alındığını şeffaf bir şekilde açıklar.</p>
+
+                <h2>1. Veri Toplama Politikası</h2>
+                <p>Math Master, gelişmiş özelliklerine rağmen tamamen <strong>offline (çevrimdışı)</strong> odaklı bir uygulamadır. Gizliliğinizin korunması için:</p>
+                <ul>
+                    <li>Hiçbir kişisel veri (isim, e-posta, numara vb.) toplamıyoruz.</li>
+                    <li>Uygulama içerisinde hesap oluşturma zorunluluğu yoktur.</li>
+                    <li>Verileriniz (seviye ilerlemesi, kazanılan 16 rozet, avatar seçimleri ve istatistikler) sadece cihazınızda yerel olarak saklanır.</li>
+                </ul>
+
+                <h2>2. 15 Seviyeli Gelişim ve Veriler</h2>
+                <p>XP puanlarınız ve seviye ilerlemeniz (15. seviye olan Tanrısal seviyeye kadar) tamamen cihazınızın güvenli uygulama depolama alanında tutulur. Bu veriler hiçbir sunucuyla paylaşılmaz ve cihazınızdan dışarı aktarılmaz.</p>
+
+                <h2>3. Üçüncü Taraf ve Reklamlar</h2>
+                <p>Uygulamamız kullanıcı deneyimini bozacak veya izleme yapacak üçüncü taraf analitik araçları veya reklam ağları içermez. Matematik öğrenme yolculuğunuz tamamen size özeldir.</p>
+
+                <h2>4. Çocukların Gizliliği</h2>
+                <p>Uygulama, her yaştan matematik tutkunu için tasarlanmıştır. Çocuklardan veri toplamadığımız için COPPA ve uluslararası gizlilik standartlarına tam uyum sağlıyoruz.</p>
+
+                <h2>5. Güvenlik</h2>
+                <p>Verileriniz, cihazınızın sağladığı doğal şifreleme ve güvenlik katmanlarıyla korunur. Uygulamayı sildiğinizde, cihazınızdaki yerel veriler de kalıcı olarak silinir.</p>
+
+                <div class="contact-box">
+                    <p>Sorularınız için:</p>
+                    <p><strong>novaorion7@gmail.com</strong></p>
+                </div>
+            </section>
+
+            <!-- English Version -->
+            <section id="en">
+                <span class="badge">Last Updated: February 25, 2026</span>
+                <p>At <strong>Math Master</strong> ("we", "our", or "application"), we place the highest value on your privacy. This policy transparently explains how your information is handled.</p>
+
+                <h2>1. Data Collection Policy</h2>
+                <p>Math Master is an <strong>offline-first</strong> application designed with privacy in mind:</p>
+                <ul>
+                    <li>No personal data (name, email, phone number, etc.) is collected.</li>
+                    <li>No account creation is required to use the app.</li>
+                    <li>Your progress (15 levels, 16 badges earned, avatar selections, and statistics) is stored exclusively locally on your device.</li>
+                </ul>
+
+                <h2>2. 15-Level Progression & Data</h2>
+                <p>Your XP points and level milestones (up to the 15th 'Godlike' level) are kept within your device's secure application storage. This data is never shared with any server or transmitted externally.</p>
+
+                <h2>3. Third-Party Services & Ads</h2>
+                <p>Our application does not include third-party analytics tools or advertising networks that track user behavior. Your learning journey remains entirely private.</p>
+
+                <h2>4. Children's Privacy</h2>
+                <p>Designed for math lovers of all ages, we do not collect data from children, ensuring full compliance with COPPA and international privacy standards.</p>
+
+                <h2>5. Security</h2>
+                <p>Your data is protected by the inherent security layers of your device. Uninstalling the app will permanently remove all locally stored progress data.</p>
+
+                <div class="contact-box">
+                    <p>For any inquiries:</p>
+                    <p><strong>novaorion7@gmail.com</strong></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Math Master. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function setLang(lang) {
+            // Update sections
+            document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Update page title
+            document.title = lang === 'tr' ? 'Gizlilik Politikası - Math Master' : 'Privacy Policy - Math Master';
+        }
+    </script>
+</body>
+</html>
